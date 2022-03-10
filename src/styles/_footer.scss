@@ -1,0 +1,9 @@
+&--footer{
+    color: $dark;
+    font-family: $smoochSans;
+    font-size: 20px;
+
+    & a:hover{
+        text-decoration: underline;
+    }
+}

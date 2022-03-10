@@ -1,0 +1,1 @@
+Content Editable view to check the commands are working or not
