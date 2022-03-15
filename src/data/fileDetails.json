@@ -1,0 +1,66 @@
+{
+    "about_me.md": [
+        {
+            "title": "Name: Kunal Panchal",
+            "desc" : "Current Role: Senior Software Engineer (Frontend)"
+        },
+        {
+            "title": "Personal Details:",
+            "desc" : "Gender : Male <br> Marital Status : Single <br> Nationality : Indian <br> Address : Room no 5, Pragati Chawl, Shantilal <br> Compnd, Khar(East), Mumbai 400051 <br> Languages : English, Hindi, Marathi"
+        },
+        {
+            "title": "Experience Summary:",
+            "desc" : "5+ of experience in IT INDUSTRY. <br> Supports web-based products by using multiple programming frameworks. <br> Experience in ReactJS and MERN stack (MongoDB, Express, Angular and Node) <br> Proficient in HTML, CSS (LESS & SCSS), Javascript and Jquery and experience on Bootstrap Have the ability to work in tight deadlines, a self-motivator, team player and quick leaner."
+        }
+    ],
+    "my_experience.md": [
+        {
+            "title": "Just Dial pvt ltd | Senior Software Engineer | May 2021 - Current",
+            "desc" : "Just Dial Limited is India's No. 1 Local Search engine that provides local search related services to users across India through multiple platforms such as website, mobile website, Apps (Android, iOS), over the telephone and text (SMS).",
+            "pointers" : [
+                "Assisting Web development throughout the development process of multiple client projects on a single application platform",
+                "Carry out manual tests and responsible for debugging and resolving the issues raised by the customer support and Quality Assurance team.",
+                "Responsible for API Creation and integrations in the applications using NodeJs, express",
+                "Responsible for Feature implementations and Testing Features",
+                "Guiding new joiners through the application process"
+            ]
+        },
+        {
+            "title": "Media.net | Senior UI Developer | Aug 2016 - May2021",
+            "desc" : "Media.net is a leading global advertising company with one of the most comprehensive portfolios of advertising technology in the industry across search, native, display, mobile",
+            "pointers" : [
+                "Worked as UI Developer for more than 4 years.",
+                "Implemented various ad units like keyword ad blocks, interstitials and SERPs(Search Engine Result Pages).",
+                "Implemented marketing material for Chrome, Firefox, Safari and Internet Explorer extensions.",
+                "Worked on internal projects such as Analytics (Website detailing product revenue), App Handler (Dashboard Website handling features and mapping multiple extensions and their marketing pages on Chrome, Firefox, and Internet Explorer marketplace)",
+                "Successfully integrated ReactJs and processified it.",
+                "Worked on multiple features provided to the user on a single/Multi page sites using React and Javascript",
+                "Was responsible for code reviewing and guiding the new joiners throughout the application process",
+                "Worked on some personal projects to ease day to day work includes chrome extensions and widgets"
+            ]
+        }
+    ],
+    "my_skills.md" : [
+        {
+            "title": "Skills & proficiencies",
+            "desc" : "",
+            "pointers": [
+                "JavaScript",
+                "ReactJS",
+                "Redux",
+                "NodeJS",
+                "HTML5",
+                "CSS",
+                "SCSS, SASS",
+                "JQuery",
+                "Learning Typescript"
+            ]
+        }
+    ],
+    "my_education.md": [
+        {
+            "title": "Professional Qualifications",
+            "desc" : "<strong>BSc Information Technology</strong> <br> R.D National College - 2013-2016 <br><br> <strong>Higher Secondary School Certificates</strong> <br> R.D National College - 2011-2012 <br><br> <strong> Secondary School Certificates </strong> <br> I.E.S New English School - 2010"
+        }
+    ]
+}

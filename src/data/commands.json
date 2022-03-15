@@ -1,0 +1,44 @@
+{
+    "ls": {
+        "title": "Lists of assests",
+        "desc" : "Lists of assests present in particular dir",
+        "help" : "ls",
+        "key": "showListings",
+        "list": [
+            {
+                "filename": "about_me.md",
+                "click" : "cat about_me.md"
+            },
+            {
+                "filename": "my_experience.md",
+                "click" : "cat my_experience.md"
+            },
+            {
+                "filename": "my_skills.md",
+                "click" : "cat my_skills.md"
+            },
+            {
+                "filename": "my_education.md",
+                "click" : "cat my_education.md"
+            },
+            {
+                "filename": "my_resume.pdf",
+                "click": "curl -O my_resume.pdf"
+            }
+        ]
+    },
+    "help-me": {
+        "title": "Help",
+        "desc": "Help-me shows commands available on the virtual terminal",
+        "help": "help-me"
+    },
+    "cat": {
+        "title": "Read the selected file",
+        "desc": "Read the selected file ",
+        "help": "cat &lt;FILE_NAME&gt;"
+    },
+    "desc":{},
+    "curl": {
+        
+    }
+}

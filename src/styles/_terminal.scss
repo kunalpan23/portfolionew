@@ -6,6 +6,8 @@
         transition: ease all 500ms;
         height: calc(100vh - 150px); 
         overflow: hidden;
+        font-family: $ibmplexmono;
+        font-size: 0.8rem;
 
         &.mode__{
             &FULLSCREEN{
@@ -35,6 +37,38 @@
                 &:hover{
                     opacity: 1;
                 }
+            }
+        }
+        & .terminal-command-wrap{
+            color: $white;
+
+            & .prefix-command{
+                color:$green;
+                font-weight: bold;
+            }
+
+            & .hint{
+                color: $brightYellow;
+            }
+        }
+        & .blinking-cursor {
+            user-select: none;
+            animation: blink 1s steps(2, start) infinite;
+            display: none;
+            @keyframes blink {
+                to {
+                  visibility: hidden;
+                }
+              }
+        }
+        & .text-command{
+            caret-color: transparent;
+            outline: none;
+            & br{
+                display:none;
+            }
+            &:focus + .blinking-cursor{
+                display: inline;
             }
         }
     }

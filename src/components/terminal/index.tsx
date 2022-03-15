@@ -6,8 +6,14 @@ export default function () {
   const [state]: any = useContext(MyContext);
   return (
     <section className="main--terminal box-border px-2">
-      <TerminalHeaderBar />
-	  <Terminalbody />
+      <div
+        className={`main--terminal__container  mode__${
+          state.mode ? "FULLSCREEN" : "REGULAR"
+        }  rounded-xl sm:container sm:mx-auto flex flex-col`}
+      >
+        <TerminalHeaderBar />
+        <Terminalbody />
+      </div>
     </section>
   );
 }

@@ -1,15 +1,24 @@
-import {DefaultStore, Commands} from "../interfaces/interfaces";
+import {DefaultStore, Query} from "../interfaces/interfaces";
 
-export const defaultCommand: Commands = {
+export const query: Query = {
     owerName: "kunalpanchal",
     isEditable: true,
     commandQuery: "",
-    commandOutput: ""
+    commandOutput: "",
+    commandType : ""
+}
+
+export const userNameQuery: Query = {
+    ...query,
+    owerName : ""
 }
 
 export const defaultStore:DefaultStore = {
 	loading: true,
     mode: false, 
-    commands: [defaultCommand]
+    commands: [userNameQuery],
+    inputUser: {
+        name: ""
+    }
 };
 
