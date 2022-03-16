@@ -7,8 +7,11 @@ $stronggrey: #ADB5BD;
 $milddark: #495057;
 $dark: #212529;
 $white: #fff;
-$green: rgb(0, 128, 0);
+$green: #0f0;
 $brightYellow: #fce94f;
+
+$transparent: transparent;
+$error: red;
 
 $monoton: "Monoton", "cursive";
 $smoochSans: "Smooch Sans", "sans-serif";
@@ -22,4 +25,5 @@ $logofontSize: 30px;
 /* Default Styles */
 $rootfontsize: 16px;
 
+$caretColor: $white;
 

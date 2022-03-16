@@ -62,7 +62,7 @@
               }
         }
         & .text-command{
-            caret-color: transparent;
+            caret-color: $caretColor;
             outline: none;
             & br{
                 display:none;

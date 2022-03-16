@@ -6,20 +6,20 @@
         "key": "showListings",
         "list": [
             {
-                "filename": "about_me.md",
-                "click" : "cat about_me.md"
+                "filename": "about_me.txt",
+                "click" : "cat about_me.txt"
             },
             {
-                "filename": "my_experience.md",
-                "click" : "cat my_experience.md"
+                "filename": "my_experience.txt",
+                "click" : "cat my_experience.txt"
             },
             {
-                "filename": "my_skills.md",
-                "click" : "cat my_skills.md"
+                "filename": "my_skills.txt",
+                "click" : "cat my_skills.txt"
             },
             {
-                "filename": "my_education.md",
-                "click" : "cat my_education.md"
+                "filename": "my_education.txt",
+                "click" : "cat my_education.txt"
             },
             {
                 "filename": "my_resume.pdf",

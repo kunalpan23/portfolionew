@@ -51,3 +51,50 @@ export function getCommandNotFound(command: string){
 export function getFileNotFound(fileName: string){
     return `zsh: file not found: ${fileName|| ""}`
 }
+
+export function getSelectionCharacterOffsetWithin(element: any) {
+    let start = 0;
+    let end = 0;
+    const doc: any = element.ownerDocument || element.document;
+    const win = doc.defaultView || doc.parentWindow;
+    let sel;
+    if (typeof win.getSelection != "undefined") {
+        sel = win.getSelection();
+        if (sel.rangeCount > 0) {
+            const range = win.getSelection().getRangeAt(0);
+            let preCaretRange = range.cloneRange();
+            preCaretRange.selectNodeContents(element);
+            preCaretRange.setEnd(range.startContainer, range.startOffset);
+            start = preCaretRange.toString().length;
+            preCaretRange.setEnd(range.endContainer, range.endOffset);
+            end = preCaretRange.toString().length;
+        }
+    } else if ( (sel = (doc as any).selection) && sel.type != "Control") {
+        const textRange = sel.createRange();
+        const preCaretTextRange = (doc.body as any).createTextRange();
+        preCaretTextRange.moveToElementText(element);
+        preCaretTextRange.setEndPoint("EndToStart", textRange);
+        start = preCaretTextRange.text.length;
+        preCaretTextRange.setEndPoint("EndToEnd", textRange);
+        end = preCaretTextRange.text.length;
+    }
+    return { start: start, end: end };
+}
+
+export const placeCaretAtEnd = (el:any) => {
+    el.focus();
+    if (typeof window.getSelection != "undefined"
+            && typeof document.createRange != "undefined") {
+        const range = document.createRange();
+        range.selectNodeContents(el);
+        range.collapse(false);
+        const sel:any = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+    } else if (typeof (document.body as any).createTextRange != "undefined") {
+        const textRange: any = (document.body as any).createTextRange();
+        textRange.moveToElementText(el);
+        textRange.collapse(false);
+        textRange.select();
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "about_me.md": [
+    "about_me.txt": [
         {
             "title": "Name: Kunal Panchal",
             "desc" : "Current Role: Senior Software Engineer (Frontend)"
@@ -13,7 +13,7 @@
             "desc" : "5+ of experience in IT INDUSTRY. <br> Supports web-based products by using multiple programming frameworks. <br> Experience in ReactJS and MERN stack (MongoDB, Express, Angular and Node) <br> Proficient in HTML, CSS (LESS & SCSS), Javascript and Jquery and experience on Bootstrap Have the ability to work in tight deadlines, a self-motivator, team player and quick leaner."
         }
     ],
-    "my_experience.md": [
+    "my_experience.txt": [
         {
             "title": "Just Dial pvt ltd | Senior Software Engineer | May 2021 - Current",
             "desc" : "Just Dial Limited is India's No. 1 Local Search engine that provides local search related services to users across India through multiple platforms such as website, mobile website, Apps (Android, iOS), over the telephone and text (SMS).",
@@ -40,7 +40,7 @@
             ]
         }
     ],
-    "my_skills.md" : [
+    "my_skills.txt" : [
         {
             "title": "Skills & proficiencies",
             "desc" : "",
@@ -57,7 +57,7 @@
             ]
         }
     ],
-    "my_education.md": [
+    "my_education.txt": [
         {
             "title": "Professional Qualifications",
             "desc" : "<strong>BSc Information Technology</strong> <br> R.D National College - 2013-2016 <br><br> <strong>Higher Secondary School Certificates</strong> <br> R.D National College - 2011-2012 <br><br> <strong> Secondary School Certificates </strong> <br> I.E.S New English School - 2010"
