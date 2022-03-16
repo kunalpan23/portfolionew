@@ -39,9 +39,8 @@ export function verifyAndCommandOutput(command: string){
         return (generateHTML as any)[command](command);
     }else{
         const args: string[] = command.split(" ").length ? command.split(" ") : ["help-me"];
-        const data = (generateHTML as any)[args[0]](args);
-        
-        return data || getCommandNotFound(args[0]); 
+
+        return (generateHTML as any).hasOwnProperty(args[0]) && (generateHTML as any)[args[0]](args) || getCommandNotFound(args[0]); 
     }
 }
 
