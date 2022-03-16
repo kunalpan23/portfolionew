@@ -15,11 +15,11 @@ export default function Terminalbody() {
                     return (
                         <CommandLine 
                             key={`${item.commandQuery}_${index}`}
-                            commandPrefix={index == 0 ? prefixCommand: `${state.inputUser.name}@terminal >`}
+                            commandPrefix={!index  ? prefixCommand: `${state.inputUser.name}@terminal >`}
                             isEditable={item.isEditable}
                             commandQuery={item.commandQuery}
                             commandOutput={item.commandOutput}
-                            commandType={index === 0 ? COMMAND_TYPE_NAME : COMMAND_TYPE_QUERY}
+                            commandType={!index ? COMMAND_TYPE_NAME : COMMAND_TYPE_QUERY}
                             dispatch={dispatch}
                             index={index}
                         />

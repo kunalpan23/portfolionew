@@ -3,15 +3,12 @@ import {
     HANDLE_ON_COMMAND_CHANGE, 
     COMMAND_TYPE_NAME,
     COMMAND_TYPE_QUERY,
-    LS_CLICK_HANDLE
+    LS_CLICK_HANDLE,
+    CLEAR_CONSOLE
 } from "../actions";
-
 import { DefaultStore, Query } from "../interfaces/interfaces";
-
-
-
-import commandsJson from '../data/commands.json'; 
 import { getQueryOutput } from "../utils";
+import { query } from "../defaults/defaultStore";
 
 export default {
     [TOGGLE_TERMINAL_MODE](state: DefaultStore, payload: object|any){

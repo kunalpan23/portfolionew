@@ -4,9 +4,6 @@ import catCommand from "./cat.command";
 
 export default {
     ...lsCommand,
-    [COMMAND_DESCRIPTION]: function(args: []){
-
-    },
     [COMMAND_HELP_ME]: function (args: []){
 
     },

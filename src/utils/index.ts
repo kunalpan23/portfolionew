@@ -22,13 +22,16 @@ export function getQueryOutput(state: DefaultStore, payload: Object| unknown){
     const { index, commandType, value}: any  = payload;
     const { commands } = state;
 
-    if(commandType === "NAME"){
+    if(["NAME"].includes(commandType)){
         commands[index].commandOutput = `Welcome, ${value}!!! <br> <span class="hint"> HINT: </span> Try typing "ls" \n and hit enter`;
+        commands[index].isEditable = false;
+    }else if(["clear"].includes(value)){
+        commands.length = 0 ;
     }else{
         const commandResult = verifyAndCommandOutput(value);
         commands[index].commandOutput = commandResult;
     }
-    commands[index].isEditable = false;
+    
     commands.push({...query});
     return commands;
 }

@@ -37,7 +37,11 @@
         "desc": "Read the selected file ",
         "help": "cat &lt;FILE_NAME&gt;"
     },
-    "desc":{},
+    "clear":{
+        "title" : "Clear the console",
+        "desc" : "Clear commands is to clear the console",
+        "help": "clear"
+    },
     "curl": {
         
     }
