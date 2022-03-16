@@ -24,7 +24,8 @@ module.exports = {
   } /* determines how different module types will be treated */,
   output: {
     path: path.resolve(__dirname, "./build"),
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
+    clean: true
   } /* where to output your bundle */,
   mode: "development" /* for built-in optimizations -> 'none' | 'development' | 
 'production' */,
@@ -34,6 +35,7 @@ module.exports = {
   } /* options for webpack-dev-server */,
   plugins: [
     new HtmlWebpackPlugin({
+      title: "Production",
       template: path.resolve(__dirname, "./src/index.html"),
     }) /* simplifies the creation of HTML files to serve your webpack bundles */,
   ],

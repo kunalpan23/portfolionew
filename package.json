@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --config webpack.config.js",
-    "build": "webpack build --config webpack.config.js --stats verbose",
+    "start": "NODE_ENV=development && webpack serve --open --config webpack.dev.js",
+    "build": "NODE_ENV=production && webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kunalpan23/portfolionew#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typescript": "^4.6.2"
@@ -41,6 +42,7 @@
     "tailwindcss": "^3.0.23",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
   }
 }
