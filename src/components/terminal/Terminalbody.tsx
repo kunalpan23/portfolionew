@@ -9,7 +9,7 @@ export default function Terminalbody() {
     const [state, dispatch]: any = useContext(MyContext);
     const prefixCommand = "Try typing your name >"
     return (
-        <div className="flex flex-1 flex-col overflow-y-auto">
+        <div className="flex flex-1 flex-col overflow-y-auto hide-scrollbar pr-2.5">
             {
                 state.commands.map((item: Query, index: number) => {
                     return (

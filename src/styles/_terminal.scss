@@ -71,5 +71,9 @@
                 display: inline;
             }
         }
+
+        & .hide-scrollbar{
+            width: calc(100% + 15px);
+        }
     }
 }

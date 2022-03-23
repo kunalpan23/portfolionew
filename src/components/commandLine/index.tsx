@@ -35,7 +35,7 @@ export default function({ commandPrefix, isEditable, commandQuery,commandType,  
         }
     }
     return (
-        <div className={`terminal-command-wrap pl-2 pt-3`} onClick={() => inputRef?.focus()}>
+        <div className={`terminal-command-wrap pl-2 pt-3 pb-2`} onClick={() => inputRef?.focus()}>
             <div className="command flex align-center">
                 <span className="prefix-command mr-2">{commandPrefix}</span>
                 <span className="text-command" suppressContentEditableWarning={true} ref={ref => setref(ref)} onKeyUpCapture={onKeyPress} contentEditable={isEditable}>{commandQuery}</span>
