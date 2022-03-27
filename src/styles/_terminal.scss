@@ -4,7 +4,7 @@
     &__container{
         background: $dark;
         transition: ease all 500ms;
-        height: calc(100vh - 150px); 
+        height: calc(100vh - 160px); 
         overflow: hidden;
         font-family: $ibmplexmono;
         font-size: 0.8rem;
@@ -62,7 +62,7 @@
               }
         }
         & .text-command{
-            caret-color: $caretColor;
+            caret-color: $transparent;
             outline: none;
             & br{
                 display:none;

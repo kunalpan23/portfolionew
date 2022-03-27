@@ -1,8 +1,8 @@
-import {PropsWithChildren} from 'react'
-import { HANDLE_ON_COMMAND_CHANGE, HANDLE_ON_COMMAND_HIT, LS_CLICK_HANDLE } from '../../actions';
+import { PropsWithChildren } from 'react'
+import { HANDLE_ON_COMMAND_CHANGE, LS_CLICK_HANDLE } from '../../actions';
 import { QueryProps } from '../../interfaces/interfaces';
 
-import { customOnClick, placeCaretAtEnd } from '../../utils';
+import { customOnClick, getCaretCoordinates, placeCaretAtEnd } from '../../utils';
 
 export default function({ commandPrefix, isEditable, commandQuery,commandType,  commandOutput, dispatch, index }:PropsWithChildren<QueryProps> ){
 
@@ -34,13 +34,19 @@ export default function({ commandPrefix, isEditable, commandQuery,commandType,  
             placeCaretAtEnd(ref);
         }
     }
+
+    const handleCaretOnKeyPress = (e:any) => {
+        const caretPos: object = getCaretCoordinates();
+        console.log(caretPos);
+    }
+
     return (
         <div className={`terminal-command-wrap pl-2 pt-3 pb-2`} onClick={() => inputRef?.focus()}>
             <div className="command flex align-center">
                 <span className="prefix-command mr-2">{commandPrefix}</span>
-                <span className="text-command" suppressContentEditableWarning={true} ref={ref => setref(ref)} onKeyUpCapture={onKeyPress} contentEditable={isEditable}>{commandQuery}</span>
+                <span className="text-command" suppressContentEditableWarning={true} onKeyDown={handleCaretOnKeyPress} onClick={handleCaretOnKeyPress} ref={ref => setref(ref)} onKeyUpCapture={onKeyPress} contentEditable={isEditable}>{commandQuery}</span>
                 {
-                    /* isEditable && (<span className="blinking-cursor" >_</span>) || null */
+                    isEditable && (<span className="blinking-cursor">_</span>) || null 
                 }
             </div>
             { commandOutput && (
