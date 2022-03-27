@@ -8,7 +8,6 @@ import {
 } from "../actions";
 import { DefaultStore, Query } from "../interfaces/interfaces";
 import { getQueryOutput } from "../utils";
-import { query } from "../defaults/defaultStore";
 
 export default {
     [TOGGLE_TERMINAL_MODE](state: DefaultStore, payload: object|any){

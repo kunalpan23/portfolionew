@@ -30,6 +30,7 @@ export function getQueryOutput(state: DefaultStore, payload: Object| unknown){
     }else{
         const commandResult = verifyAndCommandOutput(value);
         commands[index].commandOutput = commandResult;
+        commands[index].isEditable = false;
     }
     
     commands.push({...query});
