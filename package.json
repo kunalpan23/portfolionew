@@ -1,0 +1,14 @@
+{
+    "name": "Portfolio",
+    "version": "0.0.0",
+    "license": "MIT",
+    "private": true,
+    "author": {
+        "name": "Kunal Panchal",
+        "email": "panchalkunal9498@gmail.com"
+    },
+    "workspaces": [
+        "client",
+        "server"
+    ]
+}
