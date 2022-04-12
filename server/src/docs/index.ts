@@ -1,1 +1,0 @@
-export const FILE_NAME = "KunalResume1.pdf";
